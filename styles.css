@@ -842,3 +842,9 @@ a { color: inherit; }
   .contact-grid { grid-template-columns: 1fr; }
   .contact-points { margin-top: 1.4rem; margin-bottom: .4rem; }
 }
+
+/* ===== Footer: national federation + Gaelic Games Europe side by side ===== */
+.footer-affil { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: .6rem clamp(1.4rem, 4vw, 2.8rem); margin-bottom: 1.3rem; }
+.footer-affil .footer-gge { margin-bottom: 0; }
+.footer-fsgf img { height: 40px; width: auto; }
+.affiliation-links { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; }

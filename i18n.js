@@ -9,8 +9,8 @@ window.I18N = {
     "nav.contact": "Contact",
 
     "hero.eyebrow": "Gaelic games in Corsica",
-    "hero.title": "Bringing the games of Ireland to Corsica",
-    "hero.sub": "A new Gaelic games club is taking shape on the island. Gaelic football, hurling, camogie — and plenty of craic. Irish abroad, Corsican, French or simply curious: there's a place for you.",
+    "hero.title": "Bringing Irish sports to Corsica",
+    "hero.sub": "A new Gaelic games club is taking shape on the island. Gaelic football, hurling, camogie — and plenty of craic. Corsican, French, Irish on the island or simply curious: there's a place for you.",
     "hero.ctaJoin": "Discover the games",
     "hero.ctaLearn": "Join the club",
     "hero.ctaJoinClub": "Join the club",
@@ -59,14 +59,14 @@ window.I18N = {
     "games.rounders.sum": "A bat-and-ball game and one of the four Gaelic games, cousin to baseball.",
     "games.rounders.desc": "Description coming soon — we're adding this shortly.",
 
-    "about.title": "A new home for Gaelic games on the island",
-    "about.body": "We're building a welcoming club for everyone in Corsica — Irish expats, Corsicans and French people curious about Gaelic sport, students, families and friends. No experience needed. Come train, play, and be part of the community.",
+    "about.title": "A new club for Gaelic games on the island",
+    "about.body": "We're building a welcoming club for everyone in Corsica — Corsicans and French people curious about Gaelic sport, Irish living on the island, students, families and friends. No experience needed. Come train, play, and be part of the community.",
     "about.card1.title": "Play & train",
     "about.card1.body": "Regular training sessions and friendly matches for all abilities and ages.",
     "about.card2.title": "Community",
     "about.card2.body": "Social events, a home away from home, and new friends on and off the pitch.",
     "about.card3.title": "All welcome",
-    "about.card3.body": "English, French and Corsican speakers alike — everyone is welcome to get involved.",
+    "about.card3.body": "French, Corsican and English speakers alike — everyone is welcome to get involved.",
 
     "aboutm.kicker": "The club",
     "aboutm.title": "A community, first",
@@ -133,8 +133,9 @@ window.I18N = {
 
     "gge.kicker": "Part of the family of",
     "gge.title": "Gaelic Games Europe",
-    "gge.body": "Corsica GAA is being set up within Gaelic Games Europe — the governing body for Gaelic football, hurling and camogie across the continent, with clubs from Lisbon to Helsinki.",
+    "gge.body": "Corsica GAA is being set up within the Fédération des Sports Gaéliques, the national federation for Gaelic games in France, and Gaelic Games Europe — the governing body for Gaelic football, hurling and camogie across the continent, with clubs from Lisbon to Helsinki.",
     "gge.link": "Visit gaelicgameseurope.com →",
+    "gge.fsgfLink": "Visit sportsgaeliques.fr →",
 
     "subscribe.title": "Before you go…",
     "subscribe.body": "Join our community list for updates on training, matches and events at Corsica GAA.",
@@ -145,6 +146,7 @@ window.I18N = {
     "subscribe.error": "Sorry, that didn't work. Please try again.",
 
     "footer.gge": "Gaelic Games Europe",
+    "footer.fsgf.url": "https://www.sportsgaeliques.fr/en/",
     "footer.login": "Committee login",
     "footer.location": "Corsica, France",
     "footer.tagline": "Gaelic games · community · craic",
@@ -158,8 +160,8 @@ window.I18N = {
     "nav.contact": "Contact",
 
     "hero.eyebrow": "Sports gaéliques en Corse",
-    "hero.title": "Les jeux d'Irlande arrivent en Corse",
-    "hero.sub": "Un nouveau club de sports gaéliques prend forme sur l'île. Football gaélique, hurling, camogie — et beaucoup de convivialité. Irlandais de Corse, Corses, Français ou simplement curieux : il y a une place pour vous.",
+    "hero.title": "Les sports irlandais arrivent en Corse",
+    "hero.sub": "Un nouveau club de sports gaéliques prend forme sur l'île. Football gaélique, hurling, camogie — et beaucoup de convivialité. Corses, Français, Irlandais de Corse ou simplement curieux : il y a une place pour vous.",
     "hero.ctaJoin": "Découvrir les sports",
     "hero.ctaLearn": "Rejoindre le club",
     "hero.ctaJoinClub": "Rejoindre le club",
@@ -208,14 +210,14 @@ window.I18N = {
     "games.rounders.sum": "Un jeu de batte et de balle, l'un des quatre sports gaéliques, cousin du baseball.",
     "games.rounders.desc": "Description à venir — nous l'ajoutons bientôt.",
 
-    "about.title": "Une nouvelle maison pour les sports gaéliques sur l'île",
-    "about.body": "Nous construisons un club accueillant pour tous en Corse — Irlandais expatriés, Corses et Français curieux des sports gaéliques, étudiants, familles et amis. Aucune expérience requise. Venez vous entraîner, jouer et faire partie de la communauté.",
+    "about.title": "Un nouveau club pour les sports gaéliques sur l'île",
+    "about.body": "Nous construisons un club accueillant pour tous en Corse — Corses et Français curieux des sports gaéliques, Irlandais de l'île, étudiants, familles et amis. Aucune expérience requise. Venez vous entraîner, jouer et faire partie de la communauté.",
     "about.card1.title": "Jouer et s'entraîner",
     "about.card1.body": "Entraînements réguliers et matchs amicaux pour tous les niveaux et tous les âges.",
     "about.card2.title": "Communauté",
     "about.card2.body": "Événements conviviaux, une maison loin de chez soi et de nouveaux amis sur le terrain comme en dehors.",
     "about.card3.title": "Tous bienvenus",
-    "about.card3.body": "Anglophones, francophones et corsophones : tout le monde est le bienvenu.",
+    "about.card3.body": "Francophones, corsophones et anglophones : tout le monde est le bienvenu.",
 
     "aboutm.kicker": "Le club",
     "aboutm.title": "Une communauté, avant tout",
@@ -282,8 +284,9 @@ window.I18N = {
 
     "gge.kicker": "Membre de la famille",
     "gge.title": "Gaelic Games Europe",
-    "gge.body": "Corsica GAA se constitue au sein de Gaelic Games Europe — l'instance dirigeante du football gaélique, du hurling et du camogie sur le continent, avec des clubs de Lisbonne à Helsinki.",
+    "gge.body": "Corsica GAA se constitue au sein de la Fédération des Sports Gaéliques, la fédération nationale des sports gaéliques en France, et de Gaelic Games Europe — l'instance dirigeante du football gaélique, du hurling et du camogie sur le continent, avec des clubs de Lisbonne à Helsinki.",
     "gge.link": "Visiter gaelicgameseurope.com →",
+    "gge.fsgfLink": "Visiter sportsgaeliques.fr →",
 
     "subscribe.title": "Avant de partir…",
     "subscribe.body": "Rejoignez notre liste pour recevoir les nouvelles des entraînements, matchs et événements de Corsica GAA.",
@@ -294,6 +297,7 @@ window.I18N = {
     "subscribe.error": "Désolé, cela n'a pas fonctionné. Veuillez réessayer.",
 
     "footer.gge": "Gaelic Games Europe",
+    "footer.fsgf.url": "https://www.sportsgaeliques.fr/",
     "footer.login": "Espace comité",
     "footer.location": "Corse, France",
     "footer.tagline": "Sports gaéliques · communauté · convivialité",
@@ -307,8 +311,8 @@ window.I18N = {
     "nav.contact": "Cuntattu",
 
     "hero.eyebrow": "Sport gaelichi in Corsica",
-    "hero.title": "I ghjochi d'Irlanda ghjunghjenu in Corsica",
-    "hero.sub": "Un novu club di sport gaelichi nasce nant'à l'isula. Football gaelicu, hurling, camogie — è tanta cunvivialità. Irlandesi di Corsica, Corsi, Francesi o solu curiosi : ci hè una piazza per voi.",
+    "hero.title": "I sport irlandesi ghjunghjenu in Corsica",
+    "hero.sub": "Un novu club di sport gaelichi nasce nant'à l'isula. Football gaelicu, hurling, camogie — è tanta cunvivialità. Corsi, Francesi, Irlandesi di Corsica o solu curiosi : ci hè una piazza per voi.",
     "hero.ctaJoin": "Scopre i sport",
     "hero.ctaLearn": "Unisciti à u club",
     "hero.ctaJoinClub": "Unisciti à u club",
@@ -357,14 +361,14 @@ window.I18N = {
     "games.rounders.sum": "Un ghjocu di mazza è di palla, unu di i quattru sport gaelichi, cuginu di u baseball.",
     "games.rounders.desc": "Descrizzione à vene — l'aghjunghjimu prestu.",
 
-    "about.title": "Una nova casa per i sport gaelichi nant'à l'isula",
-    "about.body": "Custruimu un club accugliente per tutti in Corsica — Irlandesi espatriati, Corsi è Francesi curiosi di i sport gaelichi, studienti, famiglie è amichi. Nisuna sperienza richiesta. Venite à allenavvi, à ghjucà è à fà parte di a cumunità.",
+    "about.title": "Un novu club per i sport gaelichi nant'à l'isula",
+    "about.body": "Custruimu un club accugliente per tutti in Corsica — Corsi è Francesi curiosi di i sport gaelichi, Irlandesi di l'isula, studienti, famiglie è amichi. Nisuna sperienza richiesta. Venite à allenavvi, à ghjucà è à fà parte di a cumunità.",
     "about.card1.title": "Ghjucà è allenassi",
     "about.card1.body": "Allenamenti regulari è partite amichevule per tutti i livelli è tutte l'età.",
     "about.card2.title": "Cumunità",
     "about.card2.body": "Eventi cunviviali, una casa luntanu da casa è novi amichi nant'à u terrenu è fora.",
     "about.card3.title": "Tutti benvenuti",
-    "about.card3.body": "Anglofoni, francofoni è corsofoni : tutti sò i benvenuti.",
+    "about.card3.body": "Francofoni, corsofoni è anglofoni : tutti sò i benvenuti.",
 
     "aboutm.kicker": "U club",
     "aboutm.title": "Una cumunità, prima di tuttu",
@@ -431,8 +435,9 @@ window.I18N = {
 
     "gge.kicker": "Membru di a famiglia",
     "gge.title": "Gaelic Games Europe",
-    "gge.body": "Corsica GAA si custituisce in senu à Gaelic Games Europe — l'urganisimu direttore di u football gaelicu, di u hurling è di u camogie nant'à u cuntinente, cù club da Lisbona à Helsinki.",
+    "gge.body": "Corsica GAA si custituisce in senu à a Fédération des Sports Gaéliques, a federazione naziunale di i sport gaelichi in Francia, è à Gaelic Games Europe — l'urganisimu direttore di u football gaelicu, di u hurling è di u camogie nant'à u cuntinente, cù club da Lisbona à Helsinki.",
     "gge.link": "Visità gaelicgameseurope.com →",
+    "gge.fsgfLink": "Visità sportsgaeliques.fr →",
 
     "subscribe.title": "Prima di parte…",
     "subscribe.body": "Unitevi à a nostra lista per riceve e nuvità nant'à l'allenamenti, e partite è l'eventi di Corsica GAA.",
@@ -443,6 +448,7 @@ window.I18N = {
     "subscribe.error": "Scusate, ùn hà micca funziunatu. Pruvate torna.",
 
     "footer.gge": "Gaelic Games Europe",
+    "footer.fsgf.url": "https://www.sportsgaeliques.fr/",
     "footer.login": "Spaziu cumitatu",
     "footer.location": "Corsica, Francia",
     "footer.tagline": "Sport gaelichi · cumunità · cunvivialità",
