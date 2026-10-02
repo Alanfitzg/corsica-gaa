@@ -312,7 +312,7 @@ a { color: inherit; }
 }
 .gge-crest {
   height: clamp(96px, 12vw, 128px); width: auto; flex: none;
-  filter: drop-shadow(0 12px 24px rgba(13,31,87,.14));
+  filter: drop-shadow(0 12px 24px rgba(10,12,12,.14));
 }
 .affiliation-kicker {
   text-transform: uppercase; letter-spacing: .18em; font-size: .74rem; font-weight: 700;
@@ -848,3 +848,5 @@ a { color: inherit; }
 .footer-affil .footer-gge { margin-bottom: 0; }
 .footer-fsgf img { height: 40px; width: auto; }
 .affiliation-links { display: flex; flex-wrap: wrap; gap: .4rem 1.6rem; }
+.fsgf-mark { height: auto; width: clamp(200px, 24vw, 270px); filter: none; }
+@media (max-width: 720px) { .fsgf-mark { width: 200px; } }

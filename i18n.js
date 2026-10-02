@@ -132,9 +132,8 @@ window.I18N = {
     "contact.error": "Sorry, something went wrong sending your message. Please try again.",
 
     "gge.kicker": "Part of the family of",
-    "gge.title": "Gaelic Games Europe",
+    "gge.title": "Gaelic Sports Federation of France",
     "gge.body": "Corsica GAA is being set up within the Fédération des Sports Gaéliques, the national federation for Gaelic games in France, and Gaelic Games Europe — the governing body for Gaelic football, hurling and camogie across the continent, with clubs from Lisbon to Helsinki.",
-    "gge.link": "Visit gaelicgameseurope.com →",
     "gge.fsgfLink": "Visit sportsgaeliques.fr →",
 
     "subscribe.title": "Before you go…",
@@ -283,9 +282,8 @@ window.I18N = {
     "contact.error": "Désolé, une erreur s'est produite lors de l'envoi du message. Veuillez réessayer.",
 
     "gge.kicker": "Membre de la famille",
-    "gge.title": "Gaelic Games Europe",
+    "gge.title": "Fédération des Sports Gaéliques",
     "gge.body": "Corsica GAA se constitue au sein de la Fédération des Sports Gaéliques, la fédération nationale des sports gaéliques en France, et de Gaelic Games Europe — l'instance dirigeante du football gaélique, du hurling et du camogie sur le continent, avec des clubs de Lisbonne à Helsinki.",
-    "gge.link": "Visiter gaelicgameseurope.com →",
     "gge.fsgfLink": "Visiter sportsgaeliques.fr →",
 
     "subscribe.title": "Avant de partir…",
@@ -434,9 +432,8 @@ window.I18N = {
     "contact.error": "Scusate, ci hè statu un prublema in u mandà di u messagiu. Pruvate torna.",
 
     "gge.kicker": "Membru di a famiglia",
-    "gge.title": "Gaelic Games Europe",
+    "gge.title": "Fédération des Sports Gaéliques",
     "gge.body": "Corsica GAA si custituisce in senu à a Fédération des Sports Gaéliques, a federazione naziunale di i sport gaelichi in Francia, è à Gaelic Games Europe — l'urganisimu direttore di u football gaelicu, di u hurling è di u camogie nant'à u cuntinente, cù club da Lisbona à Helsinki.",
-    "gge.link": "Visità gaelicgameseurope.com →",
     "gge.fsgfLink": "Visità sportsgaeliques.fr →",
 
     "subscribe.title": "Prima di parte…",
