@@ -12,11 +12,11 @@
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
   <style>
     :root {
-      --ink:#0b2430; --body:#414b66; --muted:#6b7590;
-      --brand:#0f6a8c; --brand-2:#1a8ab0; --accent:#c4821e; --accent-lite:#e8a33c;
+      --ink:#0e1012; --body:#414b66; --muted:#6b7590;
+      --brand:#b1081f; --brand-2:#d4132d; --accent:#8c0a1a; --accent-lite:#c8102e;
       --bg:#f4f2e9; --card:#ffffff; --line:#e7e4d6; --track:#eef0f6;
       --good:#1f7a3d; --font-display:"Fraunces",Georgia,serif; --font-head:"Poppins",system-ui,sans-serif; --font-body:"Sen",system-ui,sans-serif;
-      --radius:16px; --shadow:0 14px 34px -16px rgba(8,58,79,.22);
+      --radius:16px; --shadow:0 14px 34px -16px rgba(10,12,12,.22);
     }
     * { box-sizing:border-box; }
     body { margin:0; font-family:var(--font-body); color:var(--body); background:var(--bg); -webkit-font-smoothing:antialiased; }
@@ -27,12 +27,12 @@
     .gate {
       min-height:100vh; display:grid; place-items:center; padding:1.5rem;
       background:
-        radial-gradient(760px 460px at 50% -12%, rgba(26,138,176,.55), transparent 62%),
-        linear-gradient(160deg, #083a4f 0%, #041f2c 100%);
+        radial-gradient(760px 460px at 50% -12%, rgba(177,8,31,.55), transparent 62%),
+        linear-gradient(160deg, #1a1b1e 0%, #0a0c0c 100%);
     }
     .gate-wrap { display:flex; flex-direction:column; align-items:center; }
     .gate-card { position:relative; overflow:hidden; width:min(400px,100%); background:var(--card); border-radius:var(--radius); box-shadow:0 30px 70px -22px rgba(0,0,0,.55); padding:2.5rem 2rem 2.2rem; text-align:center; }
-    .gate-card::before { content:""; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,#e8a33c,#f7c86a,#e8a33c); }
+    .gate-card::before { content:""; position:absolute; top:0; left:0; right:0; height:4px; background:linear-gradient(90deg,#b1081f,#d4132d,#b1081f); }
     .gate-back { display:inline-flex; align-items:center; gap:.4rem; margin-top:1.4rem; color:rgba(255,255,255,.72); text-decoration:none; font-family:var(--font-head); font-weight:600; font-size:.85rem; transition:color .2s; }
     .gate-back:hover { color:#fff; }
     .gate-card h1 { font-family:var(--font-display); font-weight:600; font-size:1.5rem; margin-bottom:.3rem; }
@@ -41,8 +41,8 @@
     header.bar .brand-crest { height:56px; width:auto; }
     .gate-card p { color:var(--muted); font-size:.92rem; margin:0 0 1.3rem; }
     .gate input { width:100%; padding:.85rem .9rem; font:inherit; border:1.5px solid var(--line); border-radius:10px; margin-bottom:.8rem; }
-    .gate input:focus { outline:none; border-color:var(--brand); box-shadow:0 0 0 3px rgba(15,106,140,.15); }
-    .gate button { width:100%; padding:.95rem; border:0; border-radius:999px; background:linear-gradient(135deg,var(--brand-2),var(--brand)); color:#fff; font-family:var(--font-head); font-weight:600; font-size:1rem; cursor:pointer; box-shadow:0 12px 26px -8px rgba(15,106,140,.55); transition:filter .2s, transform .12s; }
+    .gate input:focus { outline:none; border-color:var(--brand); box-shadow:0 0 0 3px rgba(177,8,31,.15); }
+    .gate button { width:100%; padding:.95rem; border:0; border-radius:999px; background:linear-gradient(135deg,var(--brand-2),var(--brand)); color:#fff; font-family:var(--font-head); font-weight:600; font-size:1rem; cursor:pointer; box-shadow:0 12px 26px -8px rgba(177,8,31,.55); transition:filter .2s, transform .12s; }
     .gate button:hover { filter:brightness(1.06); }
     .gate button:active { transform:translateY(1px); }
     .gate .err { color:#a3271a; font-size:.88rem; min-height:1.2em; margin:.4rem 0 0; }
@@ -92,7 +92,7 @@
     th { font-family:var(--font-head); font-weight:600; font-size:.72rem; letter-spacing:.05em; text-transform:uppercase; color:var(--muted); position:sticky; top:0; background:var(--card); }
     tbody tr:hover { background:#faf9f3; }
     .pill { display:inline-block; font-size:.72rem; font-weight:600; font-family:var(--font-head); padding:.15rem .5rem; border-radius:999px; background:var(--track); color:var(--brand); }
-    .pill.u18 { background:#fdf0d6; color:var(--accent); }
+    .pill.u18 { background:#fbe4e7; color:var(--accent); }
     .hide { display:none !important; }
     .qhead { font-family:var(--font-display); font-weight:600; font-size:1.4rem; color:var(--ink); margin:2.2rem 0 1rem; display:flex; align-items:center; gap:.7rem; }
     .qhead .qactions { margin-left:auto; display:flex; gap:.5rem; flex-wrap:wrap; }
