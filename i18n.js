@@ -142,7 +142,7 @@ window.I18N = {
     "footer.login": "Committee login",
     "footer.location": "Corsica, France",
     "footer.tagline": "Gaelic games · community · craic",
-    "footer.creditPre": "Photograph of the Bonifacio coast by Tesla Delacroix, used under a ",
+    "footer.creditPre": "Photograph of the Genoese tower at Porto by Myrabella, used under a ",
     "footer.creditPost": " licence."
   },
 
@@ -285,7 +285,7 @@ window.I18N = {
     "footer.login": "Espace comité",
     "footer.location": "Corse, France",
     "footer.tagline": "Sports gaéliques · communauté · convivialité",
-    "footer.creditPre": "Photographie de la côte de Bonifacio par Tesla Delacroix, sous licence ",
+    "footer.creditPre": "Photographie de la tour génoise de Porto par Myrabella, sous licence ",
     "footer.creditPost": "."
   },
 
@@ -428,7 +428,7 @@ window.I18N = {
     "footer.login": "Spaziu cumitatu",
     "footer.location": "Corsica, Francia",
     "footer.tagline": "Sport gaelichi · cumunità · cunvivialità",
-    "footer.creditPre": "Fotografia di a costa di Bonifaziu di Tesla Delacroix, sottu licenza ",
+    "footer.creditPre": "Fotografia di a torra genuvese di Portu di Myrabella, sottu licenza ",
     "footer.creditPost": "."
   }
 };

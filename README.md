@@ -14,7 +14,7 @@ committee dashboard. Cloned from the Verona GAA site.
 | `i18n.js` | All FR / CO / EN copy (the `data-i18n` keys) |
 | `script.js` | Language toggle (FR → CO → EN) + form handling |
 | `assets/crest.svg` | **Placeholder** crest — replace with the real one |
-| `assets/corsica-hero.jpg` | Hero photo (Bonifacio coast, CC BY-SA 4.0, Tesla Delacroix) |
+| `assets/corsica-hero.jpg` | Hero photo (Genoese tower at Porto, CC BY-SA 3.0, Myrabella) |
 | `admin.html` | Committee dashboard, served at `/admin` |
 | `api/*.js` | Vercel functions: sign-ups, questions, mailing list, dashboard data, translation |
 | `ADMIN-SETUP.md` | How to provision storage, logins and the optional translate button |

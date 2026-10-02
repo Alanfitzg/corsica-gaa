@@ -1,8 +1,10 @@
 # Corsica GAA — next steps
 
 Status: site cloned from Verona GAA and adapted for Corsica (FR / CO / EN, no
-festival section, placeholder crest, Bonifacio hero, Corsica palette). Not yet
-deployed.
+festival section, placeholder crest, Porto tower hero, Corsica palette). Deployed
+on 2026-10-02 at https://corsica-gaa.vercel.app, sharing the Verona Redis store
+(separate `corsica:*` keys), with `ADMIN_EMAILS` set. `ANTHROPIC_API_KEY` not yet
+added, so the translate button falls back to Google Translate links.
 
 ## To go live
 
