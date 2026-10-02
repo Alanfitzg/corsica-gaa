@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corsica GAA — Gaelic Games &amp; Community</title>
+  <meta name="description" content="Corsica GAA — a new Gaelic Athletic Association club and community forming in Corsica, France. Gaelic football, hurling, camogie and craic. All welcome." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Poppins:wght@400;500;600;700;800&family=Sen:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <img src="assets/crest.svg" alt="Corsica GAA crest" class="brand-crest" onerror="this.style.display='none'" />
+      <span class="brand-name">Corsica&nbsp;GAA</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="#games" data-i18n="nav.games">The Games</a>
+      <a href="#join" data-i18n="nav.join">Join the club</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="lang-switch" role="group" aria-label="Language">
+      <button type="button" data-lang="fr" class="lang-btn is-active" aria-pressed="true">FR</button>
+      <button type="button" data-lang="co" class="lang-btn" aria-pressed="false">CO</button>
+      <button type="button" data-lang="en" class="lang-btn" aria-pressed="false">EN</button>
+    </div>
+    <button class="lang-toggle" id="lang-toggle" type="button" aria-label="Change language">FR</button>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <img src="assets/crest.svg" alt="Corsica GAA crest" class="hero-crest" onerror="this.style.display='none'" />
+      <p class="eyebrow" data-i18n="hero.eyebrow">Gaelic games in Corsica</p>
+      <h1 data-i18n="hero.title">Bringing the games of Ireland to Corsica</h1>
+      <p class="hero-sub" data-i18n="hero.sub">A new Gaelic games club is taking shape on the island. Gaelic football, hurling, camogie — and plenty of craic. Irish abroad, Corsican, French or simply curious: there's a place for you.</p>
+      <div class="hero-cta hero-cta--desktop">
+        <a href="#games" class="btn btn-primary" data-i18n="hero.ctaJoin">Discover the games</a>
+        <a href="#join" class="btn btn-ghost" data-i18n="hero.ctaLearn">Join the club</a>
+      </div>
+      <div class="hero-cta hero-cta--mobile">
+        <a href="#join" class="btn btn-primary" data-i18n="hero.ctaJoinClub">Join the club</a>
+        <a href="#games" class="btn btn-ghost" data-i18n="hero.ctaDiscover">Discover the games</a>
+      </div>
+    </div>
+    <a href="#games" class="hero-scroll" aria-label="Scroll down">
+      <span class="hero-scroll-dot"></span>
+    </a>
+  </section>
+
+  <!-- ===== The Games — photo scroller + lightbox ("What is hurling?") =====
+       ADD A PHOTO:  drop a JPG in assets/games/<slug>.jpg and, in that game's
+                     <span class="tile-thumb">, add <img src="assets/games/<slug>.jpg" alt="">
+                     as the first child. It covers the colour placeholder automatically.
+       ADD A VIDEO:  in that game's <div class="tile-detail">, replace the
+                     <div class="game-video game-video--empty">…</div> with:
+                       <div class="game-video"><iframe src="https://www.youtube.com/embed/ID"
+                         title="…" loading="lazy" allowfullscreen></iframe></div>
+       EDIT TEXT:    change the games.<slug>.* strings in i18n.js (en, fr AND co).
+       ============================================================ -->
+  <section class="section section-alt" id="games">
+    <div class="section-inner">
+      <p class="eyebrow" data-i18n="games.kicker">Watch &amp; learn</p>
+      <h2 data-i18n="games.title">The games we play</h2>
+      <p class="lead games-intro" data-i18n="games.intro">Traditional Irish games and sports. Tap any one to watch it in action and learn what you're seeing.</p>
+    </div>
+
+    <div class="games-rail-wrap">
+      <ul class="games-rail" id="games-rail">
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="football" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="football">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/vSOe-USZzok/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/vSOe-USZzok/hqdefault.jpg'" />
+              <span class="tile-num">01</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.football.title">Gaelic Football</span>
+              <span class="tile-sum" data-i18n="games.football.sum">A fast, skilful mix of soccer and rugby played with a round ball.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/vSOe-USZzok" title="Gaelic Football" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.football.desc">Fifteen players a side carry, bounce, kick and hand-pass the ball, scoring a point over the crossbar or a three-point goal into the net. Watch for the high catch and long, arcing kicks curling between the posts.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="hurling" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="hurling">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/biFcgUB98ns/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/biFcgUB98ns/hqdefault.jpg'" />
+              <span class="tile-num">02</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.hurling.title">Hurling</span>
+              <span class="tile-sum" data-i18n="games.hurling.sum">One of the world's oldest and fastest field sports, played with a stick and ball.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/biFcgUB98ns" title="Hurling" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.hurling.desc">Played with a wooden stick (the hurley) and a small ball (the sliotar), struck along the ground or through the air at over 100 km/h. Watch for players catching a flying sliotar bare-handed and strikes sent the length of the field.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="camogie" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="camogie">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/i5YweOzwYBA/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/i5YweOzwYBA/hqdefault.jpg'" />
+              <span class="tile-num">03</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.camogie.title">Camogie</span>
+              <span class="tile-sum" data-i18n="games.camogie.sum">The women's game of hurling — skill, speed and serious craic.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/i5YweOzwYBA" title="Camogie" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.camogie.desc">The women's version of hurling, played with the same hurley and sliotar and almost identical rules, with over a century of history. Expect the same blistering skill and speed — first-touch control, overhead strikes and pinpoint scoring.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="handball" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="handball">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/opKbELbJEQQ/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/opKbELbJEQQ/hqdefault.jpg'" />
+              <span class="tile-num">04</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.handball.title">Handball</span>
+              <span class="tile-sum" data-i18n="games.handball.sum">A fast court game — strike a small ball against a wall with a gloved hand.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/opKbELbJEQQ" title="Handball" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.handball.desc">Description coming soon — we're adding this shortly.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="rounders" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="rounders">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/kzDN1ic-Kic/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/kzDN1ic-Kic/hqdefault.jpg'" />
+              <span class="tile-num">05</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.rounders.title">Rounders</span>
+              <span class="tile-sum" data-i18n="games.rounders.sum">A bat-and-ball game and one of the four Gaelic games, cousin to baseball.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/kzDN1ic-Kic" title="Rounders" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.rounders.desc">Description coming soon — we're adding this shortly.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="pocfada" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="pocfada">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/NZxoW_zWszU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/NZxoW_zWszU/hqdefault.jpg'" />
+              <span class="tile-num">06</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.pocfada.title">Poc Fada</span>
+              <span class="tile-sum" data-i18n="games.pocfada.sum">“The long puck” — send the sliotar over a set course in the fewest strikes of the hurley.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/NZxoW_zWszU" title="Poc Fada" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.pocfada.desc">Description coming soon — we're adding this shortly.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="roadbowling" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="roadbowling">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/viaYwBk9_KU/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/viaYwBk9_KU/hqdefault.jpg'" />
+              <span class="tile-num">07</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.roadbowling.title">Road Bowling</span>
+              <span class="tile-sum" data-i18n="games.roadbowling.sum">A country-road sport: hurl a small iron ball along the course in as few throws as possible.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/viaYwBk9_KU" title="Road Bowling" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.roadbowling.desc">Description coming soon — we're adding this shortly.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="stonelifting" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="stonelifting">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/-VRlSccPJhk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/-VRlSccPJhk/hqdefault.jpg'" />
+              <span class="tile-num">08</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.stonelifting.title">Stone Lifting</span>
+              <span class="tile-sum" data-i18n="games.stonelifting.sum">A raw test of strength — lifting heavy stones, a tradition shared across many cultures.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/-VRlSccPJhk" title="Stone Lifting" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.stonelifting.desc">Description coming soon — we're adding this shortly.</p>
+          </div>
+        </li>
+
+        <li class="game-tile">
+          <button class="tile-btn" type="button" data-game="bataireacht" aria-haspopup="dialog">
+            <span class="tile-thumb" data-thumb="bataireacht">
+              <img class="tile-photo" alt="" loading="lazy" src="https://i.ytimg.com/vi/kP6BLHADvZk/maxresdefault.jpg" onerror="this.onerror=null;this.src='https://i.ytimg.com/vi/kP6BLHADvZk/hqdefault.jpg'" />
+              <span class="tile-num">09</span>
+              <span class="tile-play" aria-hidden="true"></span>
+            </span>
+            <span class="tile-body">
+              <span class="tile-title" data-i18n="games.bataireacht.title">Bataireacht</span>
+              <span class="tile-sum" data-i18n="games.bataireacht.sum">Traditional Irish stick-fighting, played with a wooden stick known as the bata.</span>
+              <span class="tile-cta"><span data-i18n="games.tileCta">Watch &amp; learn</span> &rarr;</span>
+            </span>
+          </button>
+          <div class="tile-detail" hidden>
+            <div class="game-video"><iframe src="https://www.youtube-nocookie.com/embed/kP6BLHADvZk" title="Bataireacht" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <p class="game-desc" data-i18n="games.bataireacht.desc">Description coming soon — we're adding this shortly.</p>
+          </div>
+        </li>
+      </ul>
+      <button class="rail-nav rail-prev" type="button" aria-label="Scroll left">&lsaquo;</button>
+      <button class="rail-nav rail-next" type="button" aria-label="Scroll right">&rsaquo;</button>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="game-modal" id="game-modal" hidden>
+      <div class="game-modal-backdrop" data-close></div>
+      <div class="game-modal-card" role="dialog" aria-modal="true" aria-labelledby="game-modal-title">
+        <button class="game-modal-close" type="button" data-close aria-label="Close">&times;</button>
+        <h3 class="game-modal-title" id="game-modal-title"></h3>
+        <div class="game-modal-body"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== About / come and play ===== -->
+  <section class="section" id="about">
+    <div class="section-inner">
+      <!-- Desktop version -->
+      <div class="about-desktop">
+        <h2 data-i18n="about.title">A new home for Gaelic games on the island</h2>
+        <p class="lead" data-i18n="about.body">We're building a welcoming club for everyone in Corsica — Irish expats, Corsicans and French people curious about Gaelic sport, students, families and friends. No experience needed. Come train, play, and be part of the community.</p>
+        <div class="cards">
+          <div class="card">
+            <span class="card-accent"></span>
+            <h3 data-i18n="about.card1.title">Play &amp; train</h3>
+            <p data-i18n="about.card1.body">Regular training sessions and friendly matches for all abilities and ages.</p>
+          </div>
+          <div class="card">
+            <span class="card-accent"></span>
+            <h3 data-i18n="about.card2.title">Community</h3>
+            <p data-i18n="about.card2.body">Social events, a home away from home, and new friends on and off the pitch.</p>
+          </div>
+          <div class="card">
+            <span class="card-accent"></span>
+            <h3 data-i18n="about.card3.title">All welcome</h3>
+            <p data-i18n="about.card3.body">English, French and Corsican speakers alike — everyone is welcome to get involved.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile version: concise, editorial -->
+      <div class="about-mobile">
+        <p class="eyebrow" data-i18n="aboutm.kicker">The club</p>
+        <h2 data-i18n="aboutm.title">A community, first</h2>
+        <p class="lead" data-i18n="aboutm.body">Corsica GAA is a community first — and a sports club that opens the door to international travel, new friends and the craic. Beginners welcome. Social members welcome.</p>
+        <ul class="about-points">
+          <li>
+            <span class="ap-t" data-i18n="aboutm.p1.t">Community first</span>
+            <span class="ap-d" data-i18n="aboutm.p1.d">Social members, families and friends — everyone belongs, on and off the pitch.</span>
+          </li>
+          <li>
+            <span class="ap-t" data-i18n="aboutm.p2.t">Play &amp; travel</span>
+            <span class="ap-d" data-i18n="aboutm.p2.d">Train, play and travel for fixtures and tournaments across Europe — for all involved.</span>
+          </li>
+          <li>
+            <span class="ap-t" data-i18n="aboutm.p3.t">All welcome</span>
+            <span class="ap-d" data-i18n="aboutm.p3.d">Beginners thrive here — no experience needed, and every language spoken.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Join / Form ===== -->
+  <section class="section" id="join">
+    <div class="section-inner section-narrow">
+      <h2 data-i18n="join.title">We're building a community, not just a team</h2>
+      <p class="lead" data-i18n="join.body">Player, social member, volunteer or supporter — there's a place for everyone at Corsica GAA. Register your interest and we'll be in touch. We're just getting started, with plenty more to come.</p>
+
+      <form class="join-form" name="corsica-gaa-signup" method="POST" novalidate>
+        <p class="hp-field" aria-hidden="true">
+          <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+
+        <!-- Player or administrator -->
+        <div class="field">
+          <span class="field-label" data-i18n="form.role.label">I'd like to register as</span>
+          <div class="checks">
+            <label class="check"><input type="radio" name="role" value="player" checked /> <span data-i18n="form.role.player">Player</span></label>
+            <label class="check"><input type="radio" name="role" value="social" /> <span data-i18n="form.role.social">Social / supporting member</span></label>
+            <label class="check"><input type="radio" name="role" value="administrator" /> <span data-i18n="form.role.admin">Volunteer / helper</span></label>
+          </div>
+        </div>
+
+        <!-- Parent registering an under-18 -->
+        <label class="check parent-toggle">
+          <input type="checkbox" id="is-parent" name="registering_for_u18" value="yes" />
+          <span data-i18n="form.parent.toggle">I'm a parent or guardian registering a player under 18</span>
+        </label>
+
+        <!-- Player's details (shown only for U18 registrations) -->
+        <fieldset class="u18-block" id="u18-block" hidden>
+          <legend data-i18n="form.u18.legend">Player's details (under 18)</legend>
+          <div class="field-row">
+            <div class="field">
+              <label for="player_name" data-i18n="form.u18.name.label">Player's full name</label>
+              <input type="text" id="player_name" name="player_name" data-i18n-attr="placeholder" data-i18n="form.u18.name.ph" placeholder="Child's name" />
+            </div>
+            <div class="field">
+              <label for="player_dob" data-i18n="form.u18.dob.label">Player's date of birth</label>
+              <input type="date" id="player_dob" name="player_dob" />
+            </div>
+          </div>
+        </fieldset>
+
+        <p class="section-hint" id="contact-hint" data-i18n="form.contactHint" hidden>Your details (parent / guardian)</p>
+
+        <div class="field">
+          <label for="name" data-i18n="form.name.label">Full name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required data-i18n-attr="placeholder" data-i18n="form.name.ph" placeholder="Your name" />
+        </div>
+
+        <div class="field">
+          <label for="email" data-i18n="form.email.label">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required data-i18n-attr="placeholder" data-i18n="form.email.ph" placeholder="you@example.com" />
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="phone" data-i18n="form.phone.label">Contact number</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required data-i18n-attr="placeholder" data-i18n="form.phone.ph" placeholder="+33 6 12 34 56 78" />
+          </div>
+          <div class="field" id="dob-field">
+            <label for="dob" data-i18n="form.dob.label">Date of birth</label>
+            <input type="date" id="dob" name="dob" />
+          </div>
+        </div>
+
+        <div class="field">
+          <span class="field-label" data-i18n="form.interest.label">Which sport are you interested in?</span>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="interest" value="gaelic-football" /> <span data-i18n="form.interest.football">Gaelic Football</span></label>
+            <label class="check"><input type="checkbox" name="interest" value="hurling" /> <span data-i18n="form.interest.hurling">Hurling</span></label>
+            <label class="check"><input type="checkbox" name="interest" value="camogie" /> <span data-i18n="form.interest.camogie">Camogie</span></label>
+            <label class="check"><input type="checkbox" name="interest" value="handball" /> <span data-i18n="form.interest.handball">Handball</span></label>
+            <label class="check"><input type="checkbox" name="interest" value="rounders" /> <span data-i18n="form.interest.rounders">Rounders</span></label>
+            <label class="check"><input type="checkbox" name="interest" value="not-sure" /> <span data-i18n="form.interest.unsure">Not sure yet</span></label>
+          </div>
+        </div>
+
+        <label class="check consent">
+          <input type="checkbox" name="consent" required />
+          <span data-i18n="form.consent">I'm happy for Corsica GAA to contact me about the club.</span>
+        </label>
+
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="form.submit">Send</button>
+        <p class="form-note" data-i18n="form.note">We'll never share your details. You can unsubscribe any time.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Contact / questions ===== -->
+  <section class="section" id="contact">
+    <div class="section-inner section-narrow">
+      <p class="eyebrow" data-i18n="contact.kicker">Questions?</p>
+      <h2 data-i18n="contact.title">Get in touch</h2>
+      <p class="lead" data-i18n="contact.body">Have a question about the club, training or getting involved? Send us a message and we'll get back to you.</p>
+
+      <form class="join-form contact-form" name="corsica-gaa-contact" method="POST" novalidate>
+        <p class="hp-field" aria-hidden="true">
+          <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
+        <div class="field">
+          <label for="c_name" data-i18n="contact.name.label">Your name</label>
+          <input type="text" id="c_name" name="name" autocomplete="name" required data-i18n-attr="placeholder" data-i18n="contact.name.ph" placeholder="Your name" />
+        </div>
+        <div class="field">
+          <label for="c_email" data-i18n="contact.email.label">Email</label>
+          <input type="email" id="c_email" name="email" autocomplete="email" required data-i18n-attr="placeholder" data-i18n="contact.email.ph" placeholder="you@example.com" />
+        </div>
+        <div class="field">
+          <label for="c_message" data-i18n="contact.message.label">Message</label>
+          <textarea id="c_message" name="message" rows="4" required data-i18n-attr="placeholder" data-i18n="contact.message.ph" placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="contact.submit">Send message</button>
+        <p class="form-note" data-i18n="contact.note">We'll only use your email to reply to your question.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Affiliation: Gaelic Games Europe (governing body) ===== -->
+  <section class="affiliation" id="gge">
+    <div class="affiliation-inner">
+      <img src="assets/gge-crest.png" alt="Gaelic Games Europe crest" class="gge-crest" onerror="this.style.display='none'" />
+      <div class="affiliation-text">
+        <p class="affiliation-kicker" data-i18n="gge.kicker">Part of the family of</p>
+        <h2 class="affiliation-title" data-i18n="gge.title">Gaelic Games Europe</h2>
+        <p class="affiliation-body" data-i18n="gge.body">Corsica GAA is being set up within Gaelic Games Europe — the governing body for Gaelic football, hurling and camogie across the continent, with clubs from Lisbon to Helsinki.</p>
+        <a class="affiliation-link" href="https://gaelicgameseurope.com/" target="_blank" rel="noopener" data-i18n="gge.link">Visit gaelicgameseurope.com →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <a href="https://gaelicgameseurope.com/" target="_blank" rel="noopener" class="footer-gge" aria-label="Gaelic Games Europe">
+      <img src="assets/gge-crest.png" alt="Gaelic Games Europe crest" onerror="this.style.display='none'" />
+      <span data-i18n="footer.gge">Gaelic Games Europe</span>
+    </a>
+    <p>
+      <strong>Corsica&nbsp;GAA</strong> · <span data-i18n="footer.location">Corsica, France</span>
+    </p>
+    <p class="muted" data-i18n="footer.tagline">Gaelic games · community · craic</p>
+    <p class="credit"><span data-i18n="footer.creditPre">Photograph of the Bonifacio coast by Tesla Delacroix, used under a </span><a href="https://creativecommons.org/licenses/by-sa/4.0" target="_blank" rel="noopener">Creative Commons BY-SA 4.0</a><span data-i18n="footer.creditPost"> licence.</span></p>
+    <a class="footer-login" href="/admin" data-i18n="footer.login">Committee login</a>
+  </footer>
+
+  <!-- ===== Exit-intent: community list ===== -->
+  <div class="exit-modal" id="exit-modal" hidden>
+    <div class="exit-backdrop" data-exit-close></div>
+    <div class="exit-card" role="dialog" aria-modal="true" aria-labelledby="exit-title">
+      <button class="exit-close" type="button" data-exit-close aria-label="Close">&times;</button>
+      <img class="exit-crest" src="assets/crest.svg" alt="" onerror="this.style.display='none'" />
+      <h2 id="exit-title" data-i18n="subscribe.title">Before you go…</h2>
+      <p data-i18n="subscribe.body">Join our community list for updates on training, matches and events at Corsica GAA.</p>
+      <form class="exit-form" novalidate>
+        <p class="hp-field" aria-hidden="true"><label>Don't fill this out: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <input type="email" name="email" autocomplete="email" required data-i18n-attr="placeholder" data-i18n="subscribe.ph" placeholder="you@example.com" />
+        <button type="submit" class="btn btn-primary" data-i18n="subscribe.submit">Keep me posted</button>
+      </form>
+      <button class="exit-decline" type="button" data-exit-close data-i18n="subscribe.decline">No thanks</button>
+    </div>
+  </div>
+
+  <script>
+    // Where the join form posts. "/api/register" stores sign-ups in the site's
+    // database (see ADMIN-SETUP.md). Blank = demo mode (shows the thank-you,
+    // stores nothing).
+    window.CORSICA_FORM_ENDPOINT = "/api/register";
+    // Our own /api/register is same-origin and returns JSON, so use "cors".
+    window.CORSICA_FORM_MODE = "cors";
+  </script>
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+
+  <!-- Vercel Web Analytics (cookieless — no consent banner needed).
+       Collects data only once Analytics is enabled for the project in Vercel. -->
+  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
+  <script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>
