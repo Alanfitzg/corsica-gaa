@@ -13,7 +13,7 @@ committee dashboard. Cloned from the Verona GAA site.
 | `styles.css` | Theme + layout. **Edit the colour variables at the top to match the crest.** |
 | `i18n.js` | All FR / CO / EN copy (the `data-i18n` keys) |
 | `script.js` | Language toggle (FR → CO → EN) + form handling |
-| `assets/crest.svg` | **Placeholder** crest — replace with the real one |
+| `assets/crest.png` | Club crest (mouflon); `favicon.png` and `apple-touch-icon.png` are cut from it |
 | `assets/corsica-hero.jpg` | Hero photo (Genoese tower at Porto, CC BY-SA 3.0, Myrabella) |
 | `admin.html` | Committee dashboard, served at `/admin` |
 | `api/*.js` | Vercel functions: sign-ups, questions, mailing list, dashboard data, translation |
@@ -34,9 +34,9 @@ or under `vercel dev`.)
 
 ## Before launch
 
-1. **Crest.** Replace `assets/crest.svg` with the real crest. If it's a PNG, name it
-   `assets/crest.png` and update the four `crest.svg` references in `index.html`
-   and the two in `admin.html`.
+1. **Crest.** In place: `assets/crest.png` (transparent background, 480px wide),
+   with `favicon.png` and `apple-touch-icon.png` cut from the same artwork. To
+   change it, replace those three files and keep the names.
 2. **Colours.** Set `--brand`, `--brand-2`, `--accent` at the top of `styles.css` to
    the crest colours.
 3. **Corsican copy.** The `co` block in `i18n.js` was drafted without a native
